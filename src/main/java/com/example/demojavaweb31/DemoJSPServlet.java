@@ -13,7 +13,6 @@ public class DemoJSPServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("name", "Nguyen Van A");
-
         //load giao diện
         req.getRequestDispatcher("/WEB-INF/test.jsp").forward(req, resp);
     }
